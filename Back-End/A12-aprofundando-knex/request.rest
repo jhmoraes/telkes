@@ -1,0 +1,57 @@
+
+
+GET http://localhost:3003/ping
+###
+
+GET http://localhost:3003/bands
+###
+
+
+POST http://localhost:3003/bands
+Content-Type: application/json
+
+{
+    "id": "b007",
+    "name": "O Rappa"
+}
+###
+
+
+PUT http://localhost:3003/bands/b008
+Content-Type: application/json
+
+{
+    "id": "b005",
+    "name": "U2"
+}
+###
+
+
+DELETE http://localhost:3003/bands/b005
+###
+
+
+
+
+
+GET http://localhost:3003/songs
+###
+
+POST http://localhost:3003/songs
+Content-Type: application/json
+
+{
+    "id": "s001",
+    "name": "music1",
+    "bandId": "b002"
+}
+###
+
+PUT http://localhost:3003/songs/s001
+Content-Type: application/json
+
+{
+    "newId": "s002",
+    "newName": "music2"
+}
+###
