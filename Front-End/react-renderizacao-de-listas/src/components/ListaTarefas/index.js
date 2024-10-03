@@ -11,8 +11,6 @@ import {
 import bin from "../../assets/bin.png";
 
 
-
-
 export function ListaTarefas() {
 
   const [novaTarefa, setNovaTarefa] = useState("");
